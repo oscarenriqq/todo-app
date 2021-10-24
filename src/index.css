@@ -1,13 +1,26 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@keyframes cross-out{
+    0%   { width : 0; }
+    100% { width: 100%; }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@keyframes clear{
+    0%   { width : 100%; }
+    100% { width: 0; }
+}
+
+
+.cross-out, .clear {
+    position: relative;
+}
+
+.cross-out::after {
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: black;
+    animation-name: cross-out;
+    animation-duration: 0.3s;
 }
