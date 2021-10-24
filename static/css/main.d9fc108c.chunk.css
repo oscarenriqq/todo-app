@@ -1,0 +1,2 @@
+@-webkit-keyframes cross-out{0%{width:0}to{width:100%}}@keyframes cross-out{0%{width:0}to{width:100%}}@-webkit-keyframes clear{0%{width:100%}to{width:0}}@keyframes clear{0%{width:100%}to{width:0}}.clear,.cross-out{position:relative}.cross-out:after{content:" ";position:absolute;top:50%;left:0;width:100%;height:1px;background:#000;-webkit-animation-name:cross-out;animation-name:cross-out;-webkit-animation-duration:.3s;animation-duration:.3s}
+/*# sourceMappingURL=main.d9fc108c.chunk.css.map */
